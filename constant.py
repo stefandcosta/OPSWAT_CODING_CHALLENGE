@@ -1,7 +1,8 @@
 import hashlib as hash
 
 # IMPORTANT CONSTANT DATA DECLARATIONS
-API_KEY = "d582f14401cf7079b9d4f9bc0e1a7320"
+
+API_KEY = ""            #ADD API KEY HERE
 URL_HASH = "https://api.metadefender.com/v2/hash/"
 URL_FILE = "https://api.metadefender.com/v2/file/"
 BUFFER_SIZE = 65536
@@ -18,6 +19,7 @@ def hashEncoder(file):
                 break
             hashedFile.update(buffer)
     return hashedFile.hexdigest()
+
 
 # PRINT THE RESULT JSON
 def printJson(json):
